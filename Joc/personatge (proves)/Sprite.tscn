@@ -5,4 +5,4 @@
 [node name="Sprite" type="Sprite"]
 position = Vector2( 7.62939e-06, 1.99999 )
 scale = Vector2( 0.2, 0.2 )
-texture = ExtResource( 1 )
+texture = ExtResource ( 1 )
