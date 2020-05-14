@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Escenes/personatge.tscn" type="PackedScene" id=1]
+
+[node name="scape game" type="Node"]
+
+[node name="personatge" parent="." instance=ExtResource( 1 )]
+position = Vector2( 405.056, 272.455 )
