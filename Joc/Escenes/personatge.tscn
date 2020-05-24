@@ -140,10 +140,10 @@ script = ExtResource( 2 )
 [node name="Animacions" type="AnimatedSprite" parent="."]
 position = Vector2( 1.21799, 3.22802 )
 frames = SubResource( 20 )
-animation = "parat"
+animation = "quiet esquena "
 frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -5, 5 )
+position = Vector2( 0, 3 )
 shape = SubResource( 21 )
