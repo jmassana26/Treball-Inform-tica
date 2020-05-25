@@ -18,6 +18,6 @@ func _process(delta):
 	
 	pass
 
-func _on_Timer_timeout():
+func _on_ms_timeout():
 	ms += 1
 	pass # Replace with function body.
