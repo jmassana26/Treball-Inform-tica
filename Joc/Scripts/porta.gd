@@ -4,11 +4,11 @@ var clau = false
 
 func _on_porta_clau_body_entered(body):
 	if body.get_name() == "personatge" and clau == true:
-		queue_free()
-		#quan hi hagi una altre sala la porta la portarà a la seguent sala de moment només l 'agafa'
+		get_tree().change_scene("res://Escenes/Sala 1.tscn")
 
 func _on_clau_porta():
-	clau = true
+	clau = true 
+
 
 func _on_clau_2_porta():
 	clau = false

@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 
-
+var clau
 var velocitat = Vector2.ZERO
 var velocitat_maxima = 500
 
