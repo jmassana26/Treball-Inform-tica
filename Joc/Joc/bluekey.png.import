@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/puerta.png-b6dc9dddeb950276fc06abeafc18720d.stex"
+path="res://.import/bluekey.png-9ce6dd4412cd8a082fc2ecdf0356bef8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://puerta.png"
-dest_files=[ "res://.import/puerta.png-b6dc9dddeb950276fc06abeafc18720d.stex" ]
+source_file="res://bluekey.png"
+dest_files=[ "res://.import/bluekey.png-9ce6dd4412cd8a082fc2ecdf0356bef8.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sokoban_tilesheet copia.png-f0fd1eb131f47aa4b23e872036872450.stex"
+path="res://.import/sokoban_tilesheet copia.png-c8eb2179c34ccc4ed334c7cbb883052e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Joc/sokoban_tilesheet copia.png"
-dest_files=[ "res://.import/sokoban_tilesheet copia.png-f0fd1eb131f47aa4b23e872036872450.stex" ]
+source_file="res://sokoban_tilesheet copia.png"
+dest_files=[ "res://.import/sokoban_tilesheet copia.png-c8eb2179c34ccc4ed334c7cbb883052e.stex" ]
 
 [params]
 

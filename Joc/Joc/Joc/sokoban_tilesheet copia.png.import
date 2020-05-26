@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/puerta.png-b6dc9dddeb950276fc06abeafc18720d.stex"
+path="res://.import/sokoban_tilesheet copia.png-f0fd1eb131f47aa4b23e872036872450.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://puerta.png"
-dest_files=[ "res://.import/puerta.png-b6dc9dddeb950276fc06abeafc18720d.stex" ]
+source_file="res://Joc/sokoban_tilesheet copia.png"
+dest_files=[ "res://.import/sokoban_tilesheet copia.png-f0fd1eb131f47aa4b23e872036872450.stex" ]
 
 [params]
 

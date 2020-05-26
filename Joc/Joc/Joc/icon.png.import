@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/puerta.png-b6dc9dddeb950276fc06abeafc18720d.stex"
+path="res://.import/icon.png-d06f08059d5a6d109027b5ba52e92877.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://puerta.png"
-dest_files=[ "res://.import/puerta.png-b6dc9dddeb950276fc06abeafc18720d.stex" ]
+source_file="res://Joc/icon.png"
+dest_files=[ "res://.import/icon.png-d06f08059d5a6d109027b5ba52e92877.stex" ]
 
 [params]
 
