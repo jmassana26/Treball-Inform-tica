@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="joc de proves"
-run/main_scene="res://Escenes/personatge.tscn"
+run/main_scene="res://Escenes/scape game.tscn"
 config/icon="res://icon.png"
 
 [input]
