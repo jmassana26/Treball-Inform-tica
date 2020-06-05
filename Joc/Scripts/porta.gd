@@ -5,7 +5,7 @@ var clau2 = false
 
 func _on_porta_clau_body_entered(body):
 	if body.get_name() == "personatge" and clau == true and clau2 == true:
-		get_tree().change_scene("res://Escenes/Sala 1.tscn")
+		get_tree().change_scene("res://Escenes/scape game.tscn")
 	
 		
 
