@@ -103,7 +103,9 @@ position = Vector2( 919.369, 104.726 )
 [node name="personatge" parent="." instance=ExtResource( 1 )]
 position = Vector2( 91.974, 113.185 )
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -108.0
@@ -116,7 +118,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ms" type="Timer" parent="RichTextLabel"]
+[node name="ms" type="Timer" parent="CanvasLayer/RichTextLabel"]
 wait_time = 0.642
 autostart = true
 [connection signal="porta" from="clau" to="porta" method="_on_clau_porta"]
@@ -125,4 +127,5 @@ autostart = true
 [connection signal="porta" from="clau_2" to="porta" method="_on_clau_2_porta"]
 [connection signal="porta" from="clau_2" to="porta_vermella" method="_on_clau_2_porta"]
 [connection signal="porta" from="clau_2" to="porta_verda" method="_on_clau_2_porta"]
-[connection signal="timeout" from="RichTextLabel/ms" to="RichTextLabel" method="_on_Timer_timeout"]
+[connection signal="timeout" from="CanvasLayer/RichTextLabel/ms" to="CanvasLayer/RichTextLabel" method="_on_ms_timeout"]
+[connection signal="timeout" from="CanvasLayer/RichTextLabel/ms" to="CanvasLayer/RichTextLabel" method="_on_Timer_timeout"]
