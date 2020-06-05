@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://sokoban_tilesheet copia.png" type="Texture" id=1]
 [ext_resource path="res://Escenes/personatge.tscn" type="PackedScene" id=2]
@@ -8,7 +8,27 @@
 [ext_resource path="res://Scripts/RichTextLabel.gd" type="Script" id=6]
 [ext_resource path="res://Escenes/porta_vermella.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Escenes/porta_verda.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Escenes/porta_bloquejada_verda.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Escenes/porta_bloquejada.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Escenes/clau_blava.tscn" type="PackedScene" id=10]
+
+[sub_resource type="GDScript" id=3]
+script/source = "extends Node
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -65,6 +85,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 2/z_index = 0
 
 [node name="Sala 1" type="Node"]
+script = SubResource( 3 )
 
 [node name="terra" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
@@ -85,14 +106,21 @@ position = Vector2( 474.77, 550.951 )
 [node name="clau" parent="." instance=ExtResource( 3 )]
 position = Vector2( 930.495, 99.3072 )
 
+[node name="clau_blava" parent="." instance=ExtResource( 10 )]
+position = Vector2( 51.0054, 235.163 )
+
 [node name="porta_vermella" parent="." instance=ExtResource( 7 )]
 position = Vector2( 609.535, 99.3072 )
 
 [node name="porta_verda" parent="." instance=ExtResource( 8 )]
 position = Vector2( 418.513, 416.776 )
 
+[node name="porta_bloquejada" parent="." instance=ExtResource( 9 )]
+position = Vector2( 59.5865, 323.55 )
+collision_mask = 1
+
 [node name="personatge" parent="." instance=ExtResource( 2 )]
-position = Vector2( 119.704, 75.1632 )
+position = Vector2( 104.948, 99.3072 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 anchor_left = 0.991
@@ -108,13 +136,12 @@ __meta__ = {
 
 [node name="ms" type="Timer" parent="RichTextLabel"]
 autostart = true
-
-[node name="porta_bloquejada_verda" parent="." instance=ExtResource( 9 )]
-position = Vector2( -350.951, 359.069 )
-[connection signal="porta" from="clau_2" to="porta" method="_on_clau_2_porta"]
 [connection signal="porta" from="clau_2" to="porta_vermella" method="_on_clau_2_porta"]
+[connection signal="porta" from="clau_2" to="porta" method="_on_clau_2_porta"]
 [connection signal="porta" from="clau_2" to="porta_verda" method="_on_clau_2_porta"]
-[connection signal="porta" from="clau" to="porta" method="_on_clau_porta"]
 [connection signal="porta" from="clau" to="porta_vermella" method="_on_clau_porta"]
+[connection signal="porta" from="clau" to="porta" method="_on_clau_porta"]
 [connection signal="porta" from="clau" to="porta_verda" method="_on_clau_porta"]
+[connection signal="body_entered" from="clau_blava" to="porta_bloquejada" method="_on_clau_blava_body_entered"]
+[connection signal="porta_bloquejada" from="clau_blava" to="porta_bloquejada" method="_on_clau_blava_porta_bloquejada"]
 [connection signal="timeout" from="RichTextLabel/ms" to="RichTextLabel" method="_on_ms_timeout"]

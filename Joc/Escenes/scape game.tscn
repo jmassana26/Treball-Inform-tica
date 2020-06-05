@@ -121,11 +121,11 @@ __meta__ = {
 [node name="ms" type="Timer" parent="CanvasLayer/RichTextLabel"]
 wait_time = 0.642
 autostart = true
-[connection signal="porta" from="clau" to="porta" method="_on_clau_porta"]
 [connection signal="porta" from="clau" to="porta_vermella" method="_on_clau_porta"]
 [connection signal="porta" from="clau" to="porta_verda" method="_on_clau_porta"]
-[connection signal="porta" from="clau_2" to="porta" method="_on_clau_2_porta"]
+[connection signal="porta" from="clau" to="porta" method="_on_clau_porta"]
 [connection signal="porta" from="clau_2" to="porta_vermella" method="_on_clau_2_porta"]
 [connection signal="porta" from="clau_2" to="porta_verda" method="_on_clau_2_porta"]
+[connection signal="porta" from="clau_2" to="porta" method="_on_clau_2_porta"]
 [connection signal="timeout" from="CanvasLayer/RichTextLabel/ms" to="CanvasLayer/RichTextLabel" method="_on_ms_timeout"]
 [connection signal="timeout" from="CanvasLayer/RichTextLabel/ms" to="CanvasLayer/RichTextLabel" method="_on_Timer_timeout"]
