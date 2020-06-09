@@ -107,7 +107,7 @@ position = Vector2( 474.77, 550.951 )
 position = Vector2( 930.495, 99.3072 )
 
 [node name="clau_blava" parent="." instance=ExtResource( 10 )]
-position = Vector2( 51.0054, 235.163 )
+position = Vector2( 701.759, 71.0352 )
 
 [node name="porta_vermella" parent="." instance=ExtResource( 7 )]
 position = Vector2( 609.535, 99.3072 )
@@ -137,11 +137,11 @@ __meta__ = {
 [node name="ms" type="Timer" parent="RichTextLabel"]
 autostart = true
 [connection signal="porta" from="clau_2" to="porta" method="_on_clau_2_porta"]
-[connection signal="porta" from="clau_2" to="porta_verda" method="_on_clau_2_porta"]
 [connection signal="porta" from="clau_2" to="porta_vermella" method="_on_clau_2_porta"]
+[connection signal="porta" from="clau_2" to="porta_verda" method="_on_clau_2_porta"]
 [connection signal="porta" from="clau" to="porta" method="_on_clau_porta"]
-[connection signal="porta" from="clau" to="porta_verda" method="_on_clau_porta"]
 [connection signal="porta" from="clau" to="porta_vermella" method="_on_clau_porta"]
+[connection signal="porta" from="clau" to="porta_verda" method="_on_clau_porta"]
 [connection signal="body_entered" from="clau_blava" to="porta_bloquejada" method="_on_clau_blava_body_entered"]
 [connection signal="porta_bloquejada" from="clau_blava" to="porta_bloquejada" method="_on_clau_blava_porta_bloquejada"]
 [connection signal="timeout" from="RichTextLabel/ms" to="RichTextLabel" method="_on_ms_timeout"]
